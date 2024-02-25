@@ -1,0 +1,66 @@
+html {
+  height: 100%;
+  width: 100%;
+  font-family: 'Comic Sans MS', Arial, sans-serif;
+}
+
+.play-button {
+  font-family: 'Comic Sans MS', Arial, sans-serif;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #5b25b2;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 0;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.play-button i {
+  font-size: 30px;
+  margin-top: 30%;
+}
+
+.back-button {
+  display: flex;
+  align-items: center;
+  font-family: 'Comic Sans MS', Arial, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 0.8em 1.5em 0.8em 1.2em;
+  color: whitesmoke;
+  background: linear-gradient(0deg, #5b25b2 0%, #f270b3 100%);
+  border: none;
+  box-shadow: 0 0.7em 1.5em -0.5em #4d36d0be;
+  letter-spacing: 0.03em;
+  border-radius: 20em;
+  margin: auto;
+  display: flex;
+}
+
+.loader {
+  width: 65px;
+  height: 30px;
+  position: relative;
+  margin: auto;
+}
+.loader:before {
+  content: "";
+  position: absolute;
+  border-radius: 50px;
+  box-shadow: 0 0 0 3px inset #fff;
+  animation: l3 0.75s infinite alternate;
+}
+@keyframes l3 {
+  0% {
+    inset: 0 35px 0 0;
+  }
+  50% {
+    inset: 0 0 0 0;
+  }
+  100% {
+    inset: 0 0 0 35px;
+  }
+}

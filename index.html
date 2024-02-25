@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.9/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Enjoy a wide range of music genres played around the clock.">
+
+  <title>SynRadio</title>
+</head>
+
+<body class="bg-gray-100 font-sans flex flex-col min-h-screen" onload="RightNowPlaying()">
+
+  <section class="py-20 bg-gradient-to-r from-purple-800 to-pink-400 text-center text-white flex-1">
+    <div class="container mx-auto">
+      <h2 class="text-4xl font-semibold mb-4 text-animation">SynRadio</h2>
+
+      <div class="play-button" onclick="toggleAudio()">
+        <i class="fas fa-play"></i>
+      </div>
+
+      <div class="play-text">
+        <div class="loader"></div>
+      </div>
+
+      <br>
+      <br>
+
+      <a href="mailto:Support@SynRadio.de" style="padding: 10px;">
+        <i class="fa-solid fa-envelope fa-3x"></i></a>
+
+      <a href="https://discord.com/oauth2/authorize?client_id=1172919473653698651&permissions=4298115328&scope=bot+applications.commands"style="padding: 10px;">
+        <i class="fab fa-discord fa-3x"></i></a>
+
+      <a href="https://github.com/fraujulian"style="padding: 10px;">
+          <i class="fab fa-github fa-3x"></i></a>
+
+    </div>
+  </section>
+
+  <section class="py-16 bg-pink-100">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-semibold mb-8 text-center">SynRadio</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <div class="bg-white rounded-lg p-6 shadow-md transform transition duration-300 hover:scale-105 hover:shadow-lg">
+          <i class="fas fa-headphones text-3xl text-indigo-500 mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">hat die best mögliche Qualität! ♻️</h3>
+          <p class="text-gray-700">SynRadio klingt einfach großartig! Die Audioqualität ist top, sodass jeder Song und Podcast richtig gut rüberkommt. Egal, ob du Musik hörst oder Podcasts genießt, bei SynRadio hörst du alles in bester Qualität!</p>
+        </div>
+
+        <div class="bg-white rounded-lg p-6 shadow-md transform transition duration-300 hover:scale-105 hover:shadow-lg">
+          <i class="fas fa-music text-3xl text-indigo-500 mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">ist für Alt & Jung! 🧒</h3>
+          <p class="text-gray-700">SynRadio ist echt cool, denn es begeistert sowohl junge als auch ältere Zuhörer! Mit so vielen verschiedenen Musikrichtungen und Podcasts ist für jeden etwas dabei. Egal, ob du jung oder alt bist, SynRadio bringt dir Unterhaltung, die dich begeistern wird!</p>
+        </div>
+
+        <div class="bg-white rounded-lg p-6 shadow-md transform transition duration-300 hover:scale-105 hover:shadow-lg">
+          <i class="fas fa-users text-3xl text-indigo-500 mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">hat die beste Community! ❤️</h3>
+          <p class="text-gray-700">Wow, bei SynRadio gehört die beste Community einfach dazu! Ein riesiges Dankeschön an all unsere Hörerinnen und Hörer für ihre Unterstützung und ihre Begeisterung! Ihr seid es, die SynRadio zu etwas ganz Besonderem machen - zusammen rocken wir die Internet-Radiowelt!</p>
+        </div>
+
+      </div>
+    </div>
+    </section>
+
+  <footer class="bg-gray-900 py-8 text-white mt-auto">
+    <div class="container mx-auto text-center">
+      <p>&copy;
+        <script>document.write(new Date().getFullYear())</script> SynRadio - Alle Rechte vorbehalten. 
+        <a href="impressum.html" class="text-white hover:text-gray-400 mx-3">Impressum</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+
+<script src="script.js" type="text/javascript"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5CQFCTH4DQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5CQFCTH4DQ');
+</script>
+
+
+</html>
